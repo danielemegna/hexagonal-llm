@@ -1,4 +1,6 @@
 
+import json
+
 from openai import OpenAI
 from openai.types.chat import ChatCompletionUserMessageParam
 
@@ -17,22 +19,20 @@ class AISpecFinder(SpecFinder):
     def find_for(self, descriptions: list[str]) -> Spec:
         prompt = TotalSpecPrompt(descriptions)
         response = self.__launch_prompt(prompt)
-
-        print(response)
-
+        data = json.loads(response)
         return Spec(
-            hdd_size="512 GB",
-            hdd_type="SSD",
-            display_size='35,6 cm (14")',
-            processor_type='Intel® Core™ i7',
-            ram_size="8 GB",
-            operating_system="Windows 11 Pro"
+            hdd_size=data["hdd_size"],
+            hdd_type=data["hdd_type"],
+            display_size=data["display_size"],
+            processor_type=data["processor_type"],
+            ram_size=data["ram_size"],
+            operating_system=data["operating_system"]
         )
 
     def __launch_prompt(self, prompt: Prompt) -> str:
         client = OpenAI(
             base_url="http://127.0.0.1:8000/v1",
-            api_key="omlx-xxxxxxxxxxx",
+            api_key="omlx-r2ubkki3rkidk34d",
         )
 
         response = client.chat.completions.create(

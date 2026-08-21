@@ -13,7 +13,7 @@ class TestAISpecFinder(TestCase):
             hdd_size="512 GB",
             hdd_type="SSD",
             display_size='35,6 cm (14")',
-            processor_type='Intel® Core™ i7',
+            processor_type='Intel® Core™ i7 i7-13xxU',
             ram_size="8 GB",
             operating_system="Windows 11 Pro"
         )
