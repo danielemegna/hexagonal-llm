@@ -4,6 +4,7 @@ from openai.types.chat import ChatCompletionUserMessageParam
 
 from specfinder.prompts.operating_system_prompt import OperatingSystemPrompt
 from specfinder.prompts.prompt import Prompt
+from specfinder.prompts.total_spec_prompt import TotalSpecPrompt
 from specfinder.spec_finder import SpecFinder, Spec
 
 
@@ -14,7 +15,19 @@ class AISpecFinder(SpecFinder):
         return self.__launch_prompt(prompt)
 
     def find_for(self, descriptions: list[str]) -> Spec:
-        pass
+        prompt = TotalSpecPrompt(descriptions)
+        response = self.__launch_prompt(prompt)
+
+        print(response)
+
+        return Spec(
+            hdd_size="512 GB",
+            hdd_type="SSD",
+            display_size='35,6 cm (14")',
+            processor_type='Intel® Core™ i7',
+            ram_size="8 GB",
+            operating_system="Windows 11 Pro"
+        )
 
     def __launch_prompt(self, prompt: Prompt) -> str:
         client = OpenAI(

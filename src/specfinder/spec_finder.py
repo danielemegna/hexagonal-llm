@@ -3,11 +3,11 @@ from dataclasses import dataclass
 
 @dataclass
 class Spec:
-    hdd_size_in_gb: int
+    hdd_size: str
     hdd_type: str
     display_size: str
     processor_type: str
-    ram_size_in_gb: int
+    ram_size: str
     operating_system: str
 
 class SpecFinder(ABC):
