@@ -3,6 +3,7 @@ from openai import OpenAI
 from openai.types.chat import ChatCompletionUserMessageParam
 
 from specfinder.prompts.operating_system_prompt import OperatingSystemPrompt
+from specfinder.prompts.prompt import Prompt
 from specfinder.spec_finder import SpecFinder, Spec
 
 
@@ -10,6 +11,12 @@ class AISpecFinder(SpecFinder):
 
     def find_os_for(self, descriptions: list[str]) -> str:
         prompt = OperatingSystemPrompt(descriptions)
+        return self.__launch_prompt(prompt)
+
+    def find_for(self, descriptions: list[str]) -> Spec:
+        pass
+
+    def __launch_prompt(self, prompt: Prompt) -> str:
         client = OpenAI(
             base_url="http://127.0.0.1:8000/v1",
             api_key="omlx-xxxxxxxxxxx",
@@ -27,6 +34,3 @@ class AISpecFinder(SpecFinder):
         )
 
         return response.choices[0].message.content.__str__()
-
-    def find_for(self, descriptions: list[str]) -> Spec:
-        pass

@@ -4,6 +4,10 @@ version = "0.1.0"
 description = "Open Food Facts with AI"
 authors = ["danielemegna"]
 package-mode = true
+packages = [
+    { include = "aifoodfacts", from = "src" },
+    { include = "specfinder", from = "src" },
+]
 
 [tool.poetry.scripts]
 main = "main:main"
@@ -15,3 +19,12 @@ openai = "^1.0.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.1.1,<10.0.0)"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

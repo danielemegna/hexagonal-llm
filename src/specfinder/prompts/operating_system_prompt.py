@@ -1,6 +1,8 @@
 import textwrap
 
-class OperatingSystemPrompt:
+from specfinder.prompts.prompt import Prompt
+
+class OperatingSystemPrompt(Prompt):
     descriptions: list[str]
 
     def __init__(self, descriptions: list[str]):
