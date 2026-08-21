@@ -6,7 +6,7 @@ authors = ["danielemegna"]
 package-mode = true
 
 [tool.poetry.scripts]
-main = "aifoodfacts.main:main"
+main = "main:main"
 
 [tool.poetry.dependencies]
 python = "^3.11"

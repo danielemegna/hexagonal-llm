@@ -1,0 +1,1418 @@
+{
+    "code": "8000500032237",
+    "product_name": [
+        {
+            "lang": "main",
+            "text": "Ferrero Rocher"
+        },
+        {
+            "lang": "fr",
+            "text": "Ferrero Rocher - Fines gaufrettes enrobées de chocolat"
+        },
+        {
+            "lang": "th",
+            "text": "เฟอเรโร รอชเชอร์"
+        },
+        {
+            "lang": "ca",
+            "text": "Ferrero Rocher/30 Unidades"
+        },
+        {
+            "lang": "en",
+            "text": "Ferrero Rocher"
+        },
+        {
+            "lang": "de",
+            "text": "Ferrero Rocher"
+        },
+        {
+            "lang": "it",
+            "text": "Rocher"
+        }
+    ],
+    "images": [
+        {
+            "key": "16",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 60,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 241,
+                    "w": 400
+                },
+                "full": {
+                    "h": 1753,
+                    "w": 2906
+                }
+            },
+            "uploaded_t": 1738065047,
+            "uploader": "benbenben"
+        },
+        {
+            "key": "10",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 64,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 255,
+                    "w": 400
+                },
+                "full": {
+                    "h": 2112,
+                    "w": 3316
+                }
+            },
+            "uploaded_t": 1577536323,
+            "uploader": "tacite"
+        },
+        {
+            "key": "9",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 67,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 267,
+                    "w": 400
+                },
+                "full": {
+                    "h": 2146,
+                    "w": 3210
+                }
+            },
+            "uploaded_t": 1577536317,
+            "uploader": "tacite"
+        },
+        {
+            "key": "11",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 60,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 241,
+                    "w": 400
+                },
+                "full": {
+                    "h": 2430,
+                    "w": 4032
+                }
+            },
+            "uploaded_t": 1580520810,
+            "uploader": "bank-pc"
+        },
+        {
+            "key": "15",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 52
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 209
+                },
+                "full": {
+                    "h": 3264,
+                    "w": 1708
+                }
+            },
+            "uploaded_t": 1729060127,
+            "uploader": "foodless"
+        },
+        {
+            "key": "5",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 56,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 225,
+                    "w": 400
+                },
+                "full": {
+                    "h": 563,
+                    "w": 1000
+                }
+            },
+            "uploaded_t": 1486507326,
+            "uploader": "openfood-ch-import"
+        },
+        {
+            "key": "14",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 56
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 223
+                },
+                "full": {
+                    "h": 1440,
+                    "w": 804
+                }
+            },
+            "uploaded_t": 1711788530,
+            "uploader": "foodless"
+        },
+        {
+            "key": "4",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 56,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 225,
+                    "w": 400
+                },
+                "full": {
+                    "h": 563,
+                    "w": 1000
+                }
+            },
+            "uploaded_t": 1486507326,
+            "uploader": "openfood-ch-import"
+        },
+        {
+            "key": "1",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 56,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 225,
+                    "w": 400
+                },
+                "full": {
+                    "h": 1840,
+                    "w": 3264
+                }
+            },
+            "uploaded_t": 1360582304,
+            "uploader": "openfoodfacts-contributors"
+        },
+        {
+            "key": "13",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 56,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 222,
+                    "w": 400
+                },
+                "full": {
+                    "h": 222,
+                    "w": 400
+                }
+            },
+            "uploaded_t": 1681488078,
+            "uploader": "foodvisor"
+        },
+        {
+            "key": "8",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 56
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 225
+                },
+                "full": {
+                    "h": 1000,
+                    "w": 563
+                }
+            },
+            "uploaded_t": 1486507327,
+            "uploader": "openfood-ch-import"
+        },
+        {
+            "key": "7",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 56
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 225
+                },
+                "full": {
+                    "h": 1000,
+                    "w": 563
+                }
+            },
+            "uploaded_t": 1486507327,
+            "uploader": "openfood-ch-import"
+        },
+        {
+            "key": "21",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 75
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 300
+                },
+                "full": {
+                    "h": 1699,
+                    "w": 1275
+                }
+            },
+            "uploaded_t": 1771397721,
+            "uploader": "macrofactor"
+        },
+        {
+            "key": "18",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 13,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 50,
+                    "w": 400
+                },
+                "full": {
+                    "h": 375,
+                    "w": 3000
+                }
+            },
+            "uploaded_t": 1738065099,
+            "uploader": "benbenben"
+        },
+        {
+            "key": "20",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 75
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 300
+                },
+                "full": {
+                    "h": 1699,
+                    "w": 1275
+                }
+            },
+            "uploaded_t": 1771397712,
+            "uploader": "macrofactor"
+        },
+        {
+            "key": "22",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 52
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 209
+                },
+                "full": {
+                    "h": 4080,
+                    "w": 2136
+                }
+            },
+            "uploaded_t": 1775199054,
+            "uploader": "foodless"
+        },
+        {
+            "key": "6",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 56
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 225
+                },
+                "full": {
+                    "h": 1000,
+                    "w": 563
+                }
+            },
+            "uploaded_t": 1486507326,
+            "uploader": "openfood-ch-import"
+        },
+        {
+            "key": "17",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 22,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 90,
+                    "w": 400
+                },
+                "full": {
+                    "h": 628,
+                    "w": 2797
+                }
+            },
+            "uploaded_t": 1738065073,
+            "uploader": "benbenben"
+        },
+        {
+            "key": "3",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 56,
+                    "w": 100
+                },
+                "200": null,
+                "400": {
+                    "h": 225,
+                    "w": 400
+                },
+                "full": {
+                    "h": 1840,
+                    "w": 3264
+                }
+            },
+            "uploaded_t": 1360582755,
+            "uploader": "openfoodfacts-contributors"
+        },
+        {
+            "key": "19",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 52
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 209
+                },
+                "full": {
+                    "h": 4080,
+                    "w": 2136
+                }
+            },
+            "uploaded_t": 1739516049,
+            "uploader": "foodless"
+        },
+        {
+            "key": "2",
+            "imgid": null,
+            "rev": null,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 56
+                },
+                "200": null,
+                "400": {
+                    "h": 400,
+                    "w": 225
+                },
+                "full": {
+                    "h": 3264,
+                    "w": 1840
+                }
+            },
+            "uploaded_t": 1360582353,
+            "uploader": "openfoodfacts-contributors"
+        },
+        {
+            "key": "ingredients_th",
+            "imgid": 11,
+            "rev": 48,
+            "sizes": {
+                "100": {
+                    "h": 7,
+                    "w": 100
+                },
+                "200": {
+                    "h": 14,
+                    "w": 200
+                },
+                "400": {
+                    "h": 28,
+                    "w": 400
+                },
+                "full": {
+                    "h": 232,
+                    "w": 3317
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "ingredients_fr",
+            "imgid": 1,
+            "rev": 6,
+            "sizes": {
+                "100": {
+                    "h": 63,
+                    "w": 100
+                },
+                "200": {
+                    "h": 126,
+                    "w": 200
+                },
+                "400": {
+                    "h": 252,
+                    "w": 400
+                },
+                "full": {
+                    "h": 1317,
+                    "w": 2089
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "ingredients_hr",
+            "imgid": 17,
+            "rev": 64,
+            "sizes": {
+                "100": {
+                    "h": 23,
+                    "w": 100
+                },
+                "200": {
+                    "h": 46,
+                    "w": 200
+                },
+                "400": {
+                    "h": 91,
+                    "w": 400
+                },
+                "full": {
+                    "h": 628,
+                    "w": 2750
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "front_fr",
+            "imgid": 14,
+            "rev": 84,
+            "sizes": {
+                "100": {
+                    "h": 56,
+                    "w": 100
+                },
+                "200": {
+                    "h": 112,
+                    "w": 200
+                },
+                "400": {
+                    "h": 223,
+                    "w": 400
+                },
+                "full": {
+                    "h": 804,
+                    "w": 1440
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "front_hr",
+            "imgid": 19,
+            "rev": 85,
+            "sizes": {
+                "100": {
+                    "h": 61,
+                    "w": 100
+                },
+                "200": {
+                    "h": 123,
+                    "w": 200
+                },
+                "400": {
+                    "h": 246,
+                    "w": 400
+                },
+                "full": {
+                    "h": 1649,
+                    "w": 2682
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "front_en",
+            "imgid": 22,
+            "rev": 107,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 52
+                },
+                "200": {
+                    "h": 200,
+                    "w": 105
+                },
+                "400": {
+                    "h": 400,
+                    "w": 209
+                },
+                "full": {
+                    "h": 4080,
+                    "w": 2136
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "front_th",
+            "imgid": 14,
+            "rev": 47,
+            "sizes": {
+                "100": {
+                    "h": 60,
+                    "w": 100
+                },
+                "200": {
+                    "h": 119,
+                    "w": 200
+                },
+                "400": {
+                    "h": 239,
+                    "w": 400
+                },
+                "full": {
+                    "h": 479,
+                    "w": 803
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "nutrition_hr",
+            "imgid": 18,
+            "rev": 63,
+            "sizes": {
+                "100": {
+                    "h": 13,
+                    "w": 100
+                },
+                "200": {
+                    "h": 25,
+                    "w": 200
+                },
+                "400": {
+                    "h": 50,
+                    "w": 400
+                },
+                "full": {
+                    "h": 375,
+                    "w": 3000
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "nutrition_fr",
+            "imgid": 9,
+            "rev": 23,
+            "sizes": {
+                "100": {
+                    "h": 23,
+                    "w": 100
+                },
+                "200": {
+                    "h": 46,
+                    "w": 200
+                },
+                "400": {
+                    "h": 92,
+                    "w": 400
+                },
+                "full": {
+                    "h": 353,
+                    "w": 1540
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "nutrition_th",
+            "imgid": 11,
+            "rev": 82,
+            "sizes": {
+                "100": {
+                    "h": 29,
+                    "w": 100
+                },
+                "200": {
+                    "h": 58,
+                    "w": 200
+                },
+                "400": {
+                    "h": 116,
+                    "w": 400
+                },
+                "full": {
+                    "h": 508,
+                    "w": 1746
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        },
+        {
+            "key": "nutrition_en",
+            "imgid": 21,
+            "rev": 99,
+            "sizes": {
+                "100": {
+                    "h": 100,
+                    "w": 75
+                },
+                "200": {
+                    "h": 200,
+                    "w": 150
+                },
+                "400": {
+                    "h": 400,
+                    "w": 300
+                },
+                "full": {
+                    "h": 1699,
+                    "w": 1275
+                }
+            },
+            "uploaded_t": null,
+            "uploader": null
+        }
+    ],
+    "generic_name": [],
+    "brands": "Ferrero",
+    "origins": null,
+    "origins_tags": [],
+    "countries_tags": [
+        "en:albania",
+        "en:australia",
+        "en:austria",
+        "en:belgium",
+        "en:bosnia-and-herzegovina",
+        "en:croatia",
+        "en:france",
+        "en:italy",
+        "en:montenegro",
+        "en:morocco",
+        "en:north-macedonia",
+        "en:serbia",
+        "en:slovenia",
+        "en:switzerland",
+        "en:thailand",
+        "en:united-kingdom"
+    ],
+    "packaging_text": [],
+    "product_quantity": "375.0",
+    "product_quantity_unit": "g",
+    "ingredients_text": [
+        {
+            "lang": "main",
+            "text": "MILK chocolate 30% (sugar, cocoa butter, cocoa mass, skimmed MILK powder, concentrated BUTTER, emulsifier: lecithins (SOYA), vanillin), HAZELNUTS (28.5%), sugar, palm oil, WHEAT flour, whey powder (MILK), fat-reduced cocoa, Emulsifier: lecithins (SOYA), raising agent (sodium bicarbonate), salt, vanillin"
+        },
+        {
+            "lang": "it",
+            "text": "30% di cioccolato al latte (zucchero, burro di cacao, massa di cacao, latte scremato in polvere, burro concentrato, emulsionante: lecitine (<span class=\"allergen\">soia</span>), vanillina), <span class=\"allergen\">nocciole</span> (28,5%), zucchero, olio di palma, <span class=\"allergen\">farina di frumento</span>, siero di latte in polvere (<span class=\"allergen\">latte</span>), cacao a ridotto contenuto di grasso, emulsionante: lecitine (<span class=\"allergen\">soya</span>), agente lievitante (bicarbonato di sodio), sale, vanillina"
+        },
+        {
+            "lang": "de",
+            "text": "MILCHSCHOKOLADE 30% (Zucker, Kakaobutter, Kakaomasse, MAGERMILCHPULVER, BUTTERREINFETT, Emulgator: Lecithine (SOJA); Vanillin), HASELNÜSSE (28.5%), Zucker, Palmöl, WEIZENMEHL, SÜSSMOLKENPULVER, fettarmer Kakao, Emulgator: Lecithine (SOJA), Backtriebmittel (Natriumhydrogencarbonat), Salz, Vanillin"
+        },
+        {
+            "lang": "en",
+            "text": "<span class=\"allergen\">MILK</span> </span>chocolate 30% (sugar, cocoa butter, cocoa mass, skimmed <span class=\"allergen\">MILK</span> </span>powder, concentrated <span class=\"allergen\">BUTTER</span>, emulsifier: lecithins (<span class=\"allergen\">SOYA</span>), vanillin), <span class=\"allergen\">HAZELNUTS</span> (28.5%), sugar, palm oil, <span class=\"allergen\">WHEAT</span> </span>flour, whey powder (<span class=\"allergen\">MILK</span>), fat-reduced cocoa, Emulsifier: lecithins (<span class=\"allergen\">SOYA</span>), raising agent (sodium bicarbonate), salt, vanillin"
+        },
+        {
+            "lang": "hr",
+            "text": "MLIJEČNA čokolada 30% (šećer, kakaov maslac, kakaova masa, obrano MLIJEKO u prahu, bezvodna MLIJEČNA mast, emulgator: lecitini (SOJA); vanilin), LJEŠNJACI (28,5%), šećer, palmino ulje, PŠENIČNO brašno, SIRUTKA u prahu, kakao smanjene masti, emulgator: lecitini (SOJA), tvar za rahljenje (natrijev hidrogen karbonat), kuhinjska sol, vanilin."
+        },
+        {
+            "lang": "fr",
+            "text": "Chocolat au lait 30% (sucre, beurre de cacao, pâte de cacao lait écrémé en poudre, beurre concentré, émulsifiant : lécithines (soja); vanilline), noisettes (28,5%), sucre, huile de palme, farine de froment, lactosérum en poudre, cacao maigre, émulsifiant : lécithines (soja), poudre à lever : carbonate acide de sodium, sel, vanilline."
+        },
+        {
+            "lang": "hr",
+            "text": "MLIJEČNA čokolada 30% (šećer, kakaov maslac, kakaova masa, obrano <span class=\"allergen\">MLIJEKO</span> </span>u prahu, bezvodna MLIJEČNA mast, emulgator: lecitini (<span class=\"allergen\">SOJA</span>); vanilin), <span class=\"allergen\">LJEŠNJACI</span> (28,5%), šećer, palmino ulje, <span class=\"allergen\">PŠENIČNO brašno</span>, <span class=\"allergen\">SIRUTKA</span> </span>u prahu, kakao smanjene masti, emulgator: lecitini (<span class=\"allergen\">SOJA</span>), tvar za rahljenje (natrijev hidrogen karbonat), kuhinjska sol, vanilin."
+        },
+        {
+            "lang": "fr",
+            "text": "Chocolat au lait 30% (sucre, beurre de cacao, pâte de cacao lait écrémé en poudre, <span class=\"allergen\">beurre concentré</span>, émulsifiant : lécithines (<span class=\"allergen\">soja</span>); vanilline), <span class=\"allergen\">noisettes</span> (28,5%), sucre, huile de palme, farine de <span class=\"allergen\">froment</span>, lactosérum en poudre, cacao maigre, émulsifiant : lécithines (<span class=\"allergen\">soja</span>), poudre à lever : carbonate acide de sodium, sel, vanilline."
+        },
+        {
+            "lang": "en",
+            "text": "MILK chocolate 30% (sugar, cocoa butter, cocoa mass, skimmed MILK powder, concentrated BUTTER, emulsifier: lecithins (SOYA), vanillin), HAZELNUTS (28.5%), sugar, palm oil, WHEAT flour, whey powder (MILK), fat-reduced cocoa, Emulsifier: lecithins (SOYA), raising agent (sodium bicarbonate), salt, vanillin"
+        },
+        {
+            "lang": "it",
+            "text": "30% di cioccolato al latte (zucchero, burro di cacao, massa di cacao, latte scremato in polvere, burro concentrato, emulsionante: lecitine (soia), vanillina), nocciole (28,5%), zucchero, olio di palma, farina di frumento, siero di latte in polvere (latte), cacao a ridotto contenuto di grasso, emulsionante: lecitine (soya), agente lievitante (bicarbonato di sodio), sale, vanillina",
+        },
+        {
+            "lang": "th",
+            "text": "น้ำตาล 33.7% เฮเซลนัท 28.5% ไขมันพืช 8.7% ไขมันโกโก้ 8.4% โกโก้แมส 4.3% แป้งสาลี 4.2% ผงเวย์ 3.7% นมผงขาดมันเนย 3.3% ผงโกโก้ 3.2% ส่วนประกอบที่น้อยกว่า 2%, ไขมันเนย เกลือ วัตถุเจือปนอาหาร: อิมัลซิไฟเออร์ (เลซิติน (<span class=\"allergen\">ถั่วเหลือง</span>)) สารช่วยให้ฟู (โซเดียม ไบคาร์บอเนต) แต่งกลิ่นเลียนธรรมชาติ ข้อมูลสำหรับผู้แพ้อาหาร: มีนม เฮเซลนัท ข้าวสาลี และถั่วเหลือง"
+        },
+        {
+            "lang": "de",
+            "text": "<span class=\"allergen\">MILCHSCHOKOLADE</span> </span>30% (Zucker, Kakaobutter, Kakaomasse, <span class=\"allergen\">MAGERMILCHPULVER</span>, <span class=\"allergen\">BUTTERREINFETT</span>, Emulgator: Lecithine (<span class=\"allergen\">SOJA</span>); Vanillin), <span class=\"allergen\">HASELNÜSSE</span> (28.5%), Zucker, Palmöl, <span class=\"allergen\">WEIZENMEHL</span>, <span class=\"allergen\">SÜSSMOLKENPULVER</span>, fettarmer Kakao, Emulgator: Lecithine (<span class=\"allergen\">SOJA</span>), Backtriebmittel (Natriumhydrogencarbonat), Salz, Vanillin"
+        },
+        {
+            "lang": "th",
+            "text": "น้ำตาล 33.7% เฮเซลนัท 28.5% ไขมันพืช 8.7% ไขมันโกโก้ 8.4% โกโก้แมส 4.3% แป้งสาลี 4.2% ผงเวย์ 3.7% นมผงขาดมันเนย 3.3% ผงโกโก้ 3.2% ส่วนประกอบที่น้อยกว่า 2%, ไขมันเนย เกลือ วัตถุเจือปนอาหาร: อิมัลซิไฟเออร์ (เลซิติน (ถั่วเหลือง)) สารช่วยให้ฟู (โซเดียม ไบคาร์บอเนต) แต่งกลิ่นเลียนธรรมชาติ ข้อมูลสำหรับผู้แพ้อาหาร: มีนม เฮเซลนัท ข้าวสาลี และถั่วเหลือง"
+        }
+    ],
+    "allergens_tags": [
+        "en:gluten",
+        "en:milk",
+        "en:nuts",
+        "en:soybeans"
+    ],
+    "additives_tags": [
+        "en:e322",
+        "en:e500",
+        "en:e500ii"
+    ],
+    "labels_tags": [
+        "en:made-in-italy",
+        "en:duty-free"
+    ],
+    "nutriments": [
+        {
+            "name": "vitamin-b2",
+            "value": null,
+            "100g": 0.00010817390284501016,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "iodine",
+            "value": null,
+            "100g": 1.4529579857480712e-05,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "sodium",
+            "value": null,
+            "100g": 0.06120000034570694,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "fiber",
+            "value": null,
+            "100g": 1.0,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "lactose",
+            "value": null,
+            "100g": 3.290250062942505,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "manganese",
+            "value": null,
+            "100g": 0.001219801022671163,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "salt",
+            "value": null,
+            "100g": 0.15299999713897705,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "saturated-fat",
+            "value": null,
+            "100g": 14.100000381469727,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "nova-group",
+            "value": null,
+            "100g": 4.0,
+            "serving": null,
+            "unit": "",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "beta-carotene",
+            "value": null,
+            "100g": 1.4826890037511475e-05,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-a",
+            "value": null,
+            "100g": 1.2082129615009762e-05,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "glucose",
+            "value": null,
+            "100g": 0.10877499729394913,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "choline",
+            "value": null,
+            "100g": 0.0,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "alcohol",
+            "value": null,
+            "100g": 0.0,
+            "serving": null,
+            "unit": "% vol",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "pantothenic-acid",
+            "value": null,
+            "100g": 0.0008869459852576256,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "copper",
+            "value": null,
+            "100g": 0.000598220038227737,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "phylloquinone",
+            "value": null,
+            "100g": 2.9342709240154363e-06,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "iron",
+            "value": null,
+            "100g": 0.000699999975040555,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "sugars",
+            "value": null,
+            "100g": 39.900001525878906,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "energy",
+            "value": null,
+            "100g": 2506.0,
+            "serving": null,
+            "unit": "kJ",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "zinc",
+            "value": null,
+            "100g": 0.0011388020357117057,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "fruits-vegetables-legumes",
+            "value": null,
+            "100g": 0.0,
+            "serving": null,
+            "unit": "%",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "starch",
+            "value": null,
+            "100g": 0.0,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "sucrose",
+            "value": null,
+            "100g": 35.97544479370117,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-e",
+            "value": null,
+            "100g": 0.006909608840942383,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-pp",
+            "value": null,
+            "100g": 0.00026208898634649813,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "phosphorus",
+            "value": null,
+            "100g": 0.183460995554924,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "fat",
+            "value": null,
+            "100g": 43.0,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "polyols",
+            "value": null,
+            "100g": 0.0,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "fruits-vegetables-nuts",
+            "value": null,
+            "100g": 28.5,
+            "serving": null,
+            "unit": "%",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "cholesterol",
+            "value": null,
+            "100g": 0.004999999888241291,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "proteins",
+            "value": null,
+            "100g": 8.199999809265137,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "added-sugars",
+            "value": null,
+            "100g": 33.69841003417969,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "carbohydrates",
+            "value": null,
+            "100g": 48.400001525878906,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "fructose",
+            "value": null,
+            "100g": 0.05127499997615814,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-b1",
+            "value": null,
+            "100g": 0.00014141330029815435,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-b6",
+            "value": null,
+            "100g": 8.846679702401161e-05,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-d",
+            "value": null,
+            "100g": 4.990229740542418e-07,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-c",
+            "value": null,
+            "100g": 0.0005665789940394461,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-b12",
+            "value": null,
+            "100g": 1.627019940997343e-07,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "galactose",
+            "value": null,
+            "100g": 0.0438150018453598,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "energy-kcal",
+            "value": null,
+            "100g": 603.0,
+            "serving": null,
+            "unit": "kcal",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "selenium",
+            "value": null,
+            "100g": 8.686500223120674e-06,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "calcium",
+            "value": null,
+            "100g": 0.03999999910593033,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "maltose",
+            "value": null,
+            "100g": 0.12139900028705597,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "potassium",
+            "value": null,
+            "100g": 0.4247588515281677,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "energy-kj",
+            "value": null,
+            "100g": 2506.0,
+            "serving": null,
+            "unit": "kJ",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "water",
+            "value": null,
+            "100g": 3.271946907043457,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "magnesium",
+            "value": null,
+            "100g": 0.06958401203155518,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        },
+        {
+            "name": "vitamin-b9",
+            "value": null,
+            "100g": 2.6296529540559277e-05,
+            "serving": null,
+            "unit": "g",
+            "prepared_value": null,
+            "prepared_100g": null,
+            "prepared_serving": null,
+            "prepared_unit": null
+        }
+    ]
+}

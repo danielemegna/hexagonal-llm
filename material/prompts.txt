@@ -1,0 +1,16 @@
+date queste informazioni sugli ingredienti di un certo prodotto fornite in più lingue, forniscimi una versione json in cui gli ingredienti sono elementi di un array semplice in cui è presente solo il nome dell'ingrediente in italiano senza quantità o percentuali:
+
+```
+{{ ingredients json }}
+```
+
+- non mi aspetto di trovare ingredienti duplicati (con stesso identico nome)
+- puoi utilizzare la descrizione italiana (ingredients_text_it) come riferimento principale, e utilizzare le altre versioni solo per fare controlli incrociati con il risultato
+- se hai dubbi su due ingredienti che sembrano indicare la stessa cosa, evita di deduplicare e lascia entrambi gli ingredienti con i due nomi differenti
+- se uno degli ingredienti sembra essere anche un allergene, tienilo assolutamente, non rimuoverlo dagli ingredienti
+
+---------------------------------------------------------
+
+traducimi in italiano questa lista di allergeni:
+
+{{ allergens json }}
