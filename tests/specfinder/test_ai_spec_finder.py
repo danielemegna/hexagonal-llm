@@ -5,10 +5,10 @@ from specfinder.spec_finder import Spec
 
 
 class TestAISpecFinder(TestCase):
+    finder = AISpecFinder("Qwen3.6-35B-A3B-4bit")
 
     def test_find_spec_easy(self):
-        finder = AISpecFinder()
-        actual = finder.find_for([
+        actual = self.finder.find_for([
             'ASUS ExpertBook B3 Flip B3402FVA-EC0065X Intel® Core™ i7 i7-1355U Ibrido (2 in 1) 35,6 cm (14") ' +
             'Touch screen Full HD 8 GB DDR4-SDRAM 512 GB SSD Wi-Fi 6 (802.11ax) Windows 11 Pro Nero cod. 90NX07N1-M00230'
         ])
@@ -24,8 +24,7 @@ class TestAISpecFinder(TestCase):
 
     @skip
     def test_find_spec_hard(self):
-        finder = AISpecFinder()
-        actual = finder.find_for([
+        actual = self.finder.find_for([
             'Microsoft SrfcLp C+PcBN 13.8 U5/16/256 ITW11P Plat - EP2-47624',
             'SrfcLp C+PcBN 13.8 U5/16/256 ITW11P Plat - SrfcLp C+PcBN 13.8 U5/16/256 ITW11P Plat',
             'LPT8 13.8 CU5/16/256 PLAT - Microsoft SrLpt13.8Int8Ed CU5/16/256 CM SC Italian Platinum Italy 1 License',

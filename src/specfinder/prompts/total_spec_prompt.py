@@ -1,6 +1,6 @@
 import textwrap
 
-from specfinder.prompts.prompt import Prompt
+from common.prompt import Prompt
 
 
 class TotalSpecPrompt(Prompt):
