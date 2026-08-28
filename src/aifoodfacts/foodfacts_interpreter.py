@@ -17,8 +17,10 @@ class FoodFactsInterpreter(ABC):
         pass
 
 
-class HttpAIFoodFactsInterpreter(FoodFactsInterpreter):
+class AIFoodFactsInterpreter(FoodFactsInterpreter):
+
     def transform(self, open_food_facts: OpenFoodFacts) -> InterpretedFoodFacts:
+        # TODO use HttpLLMClient here
         return InterpretedFoodFacts(
             ingredients=[
                 "cioccolato al latte",

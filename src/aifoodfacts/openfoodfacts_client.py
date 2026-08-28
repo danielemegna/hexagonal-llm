@@ -17,6 +17,7 @@ class OpenFoodFactsClient(ABC):
 
 class HttpOpenFoodFactsClient(OpenFoodFactsClient):
     def fetch_for(self, gtin: int) -> OpenFoodFacts:
+        # fake data simulating remote http fetch
         return OpenFoodFacts(
             ingredients_text=[{
                 "lang": "main",

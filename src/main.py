@@ -1,6 +1,6 @@
 from pprint import pprint
 
-from aifoodfacts.foodfacts_interpreter import FoodFactsInterpreter, HttpAIFoodFactsInterpreter
+from aifoodfacts.foodfacts_interpreter import FoodFactsInterpreter, AIFoodFactsInterpreter
 from aifoodfacts.openfoodfacts_client import OpenFoodFactsClient, HttpOpenFoodFactsClient
 from specfinder.ai_spec_finder import AISpecFinder
 
@@ -11,7 +11,7 @@ def main() -> None:
     print("Finding ingredients from openfoodfacts...")
     openfoodfacts_client: OpenFoodFactsClient = HttpOpenFoodFactsClient()
     foodfacts = openfoodfacts_client.fetch_for(8000500248744)
-    foodfacts_interpreter: FoodFactsInterpreter = HttpAIFoodFactsInterpreter()
+    foodfacts_interpreter: FoodFactsInterpreter = AIFoodFactsInterpreter()
     interpreted_foodfacts = foodfacts_interpreter.transform(foodfacts)
     pprint(interpreted_foodfacts)
 
