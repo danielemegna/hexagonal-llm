@@ -35,7 +35,12 @@ class TotalSpecPrompt(Prompt):
         Capacità Memoria RAM (ram_size):
         0,5 GB / 1 GB / 1,5 GB / 10 GB / 1024 MB / 12 GB / 12,288 GB / 128 GB / 16 GB / 16 MB / 16,384 GB / 16000 MB / 18 GB / 192 GB / 2 GB / 20 GB / 2024 MB / 24 GB / 3 GB / 32 GB / 36 GB / 4 GB / 4,096 GB / 4.096 GB / 4.096 onboard / 48 GB / 6 GB / 64 GB / 8 GB / 8 MB / 8,192 GB / 8.192 GB / 96 GB / Non specificato
         
-        Rispondi con un json valido (stringa pulita, no markdown) che resituisce tutti i valori scelti usando le chiavi tra parentesi come valori (operating_system, hdd_type, hdd_size, etc ...)\
+        Istruzioni IMPORTANTI per la risposta:
+        - rispondi con un json con tutti i valori scelti usando le chiavi tra parentesi come valori (operating_system, hdd_type, hdd_size, etc ...)
+        - rispondi solo con il json senza aggiungere alcuna parola o carattere (no markdown, no commenti)
+        - il json può essere minimizzato a singola riga, non mandare a capo per formattarlo
+        - IMPORTANTISSIMO fare appropriato escape degli eventuali doublequote (") dentro i valori che renderebbero invalido il json
+        - RICONTROLLA il json prima di rispondere e verifica che NON abbia caratteri doublequote senza escape
         """).format(
             product_descriptions="\n".join(f"- {desc}" for desc in self.descriptions)
         )
