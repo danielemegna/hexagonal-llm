@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "aifoodfacts"
+name = "hexagonal-llm"
 version = "0.1.0"
 description = "Open Food Facts with AI"
 authors = ["danielemegna"]

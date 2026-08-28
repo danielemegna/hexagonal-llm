@@ -1,8 +1,10 @@
-# AI Food Facts
+# LLM as Hexagonal Architecture Port
 
-Open Food Facts spiced with AI
+Let's use some LLMs as Hexagonal Architecture ports
 
 ## Setup
+
+Run the main as demo
 
 ```bash
 # Install Poetry (if not installed)
