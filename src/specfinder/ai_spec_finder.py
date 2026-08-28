@@ -1,9 +1,7 @@
 
-import json
-from json import JSONDecodeError
+import yaml
 
 from common.http_llm_client import HttpLLMClient
-from specfinder.prompts.fix_invalid_json_prompt import FixInvalidJsonPrompt
 from specfinder.prompts.operating_system_prompt import OperatingSystemPrompt
 from specfinder.prompts.total_spec_prompt import TotalSpecPrompt
 from specfinder.spec_finder import SpecFinder, Spec
@@ -23,15 +21,7 @@ class AISpecFinder(SpecFinder):
         prompt = TotalSpecPrompt(descriptions)
         response = self.llm_client.launch_prompt(prompt)
 
-        try:
-            data = json.loads(response)
-        except JSONDecodeError:
-            print("Invalid JSON, trying to fix it ..")
-            prompt = FixInvalidJsonPrompt(response)
-            fixed_response = self.llm_client.launch_prompt(prompt)
-            print("broken json: " + response)
-            print("fixed json: " + fixed_response)
-            data = json.loads(fixed_response)
+        data = yaml.safe_load(response)
 
         return Spec(
             hdd_size=data["hdd_size"],

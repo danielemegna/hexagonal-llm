@@ -15,6 +15,7 @@ main = "main:main"
 [tool.poetry.dependencies]
 python = "^3.11"
 openai = "^1.0.0"
+pyyaml = "^6.0"
 
 [build-system]
 requires = ["poetry-core"]
