@@ -3,7 +3,7 @@ from unittest import TestCase
 from specfinder.ai_spec_finder import AISpecFinder
 
 
-class TestAISpecFinder(TestCase):
+class TestAISpecFinderOperatingSystem(TestCase):
     finder = AISpecFinder("Qwen3.6-35B-A3B-4bit")
 
     def test_find_os_easy_windows_11_pro(self):
