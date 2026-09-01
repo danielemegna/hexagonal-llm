@@ -64,5 +64,4 @@ class HttpOpenFoodFactsClient(OpenFoodFactsClient):
                 "en:e500",
                 "en:e500ii"
             ]
-
         )
