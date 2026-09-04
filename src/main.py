@@ -1,3 +1,4 @@
+from pathlib import Path
 from pprint import pprint
 
 from aifoodfacts.ai_foodfacts_interpreter import AIFoodFactsInterpreter
@@ -5,6 +6,7 @@ from aifoodfacts.foodfacts_interpreter import FoodFactsInterpreter
 from aifoodfacts.openfoodfacts_client import OpenFoodFactsClient, HttpOpenFoodFactsClient
 from aiticketsupport.ai_support_ticket_analyzer import AISupportTicketAnalyzer
 from aiticketsupport.support_ticket_analyzer import SupportTicket
+from socialpostcreator.social_post_creator import AISocialPostCreator
 from specfinder.ai_spec_finder import AISpecFinder
 
 
@@ -36,6 +38,15 @@ def main() -> None:
         message="Il mio dispositivo smette di rispondere completamente dopo poche ore di utilizzo, indipendentemente dalla batteria residua. Ho provato a reinserirlo nella base di ricarica ma la luce di stato resta spenta. Non ho riscontrato problemi prima di questo episodio recente. Chiedo cortesemente assistenza per diagnosticare il guasto hardware.",
     ))
     pprint(ticket_kind)
+
+    print("\n===================================\n")
+
+    print("Generating a social post for your recent experience...")
+    social_post_creator = AISocialPostCreator("Qwen3.8-27B-4bit")
+    social_post_content = social_post_creator.generate_for(
+        experience=Path("src/socialpostcreator/socrates_italia_experience.txt").read_text()
+    )
+    print(social_post_content)
 
     print("\n================= Done ==================")
 
