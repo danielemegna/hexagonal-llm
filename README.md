@@ -4,15 +4,33 @@ Let's use some LLMs as Hexagonal Architecture ports
 
 ## Setup
 
-Run the main as demo
+A local running OpenAI API compatibile LLM engine is needed on `localhost:8000` to run the main or the tests (see `src/common/http_llm_client.py`).
 
-```bash
-# Install Poetry (if not installed)
-curl -sSL https://install.python-poetry.org | python3 -
+Install uv (if not installed)
 
-# Install dependencies
-poetry install
-
-# Run the program
-poetry run main
 ```
+$ curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+Install project dependencies
+```
+$ uv sync
+```
+
+Run the main as demo
+```
+$ uv run main
+```
+
+## Run tests
+
+Install project dependencies (dev deps included)
+```
+$ uv sync --extra dev
+```
+
+Then run tests
+```
+$ uv run pytest
+```
+
