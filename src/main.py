@@ -42,7 +42,7 @@ def main() -> None:
     print("\n===================================\n")
 
     print("Generating a social post for your recent experience...")
-    social_post_creator = AISocialPostCreator("Qwen3.8-27B-4bit")
+    social_post_creator = AISocialPostCreator("gemma-4-E2B-it-MLX-8bit")
     social_post_content = social_post_creator.generate_for(
         experience=Path("src/socialpostcreator/socrates_italia_experience.txt").read_text()
     )
