@@ -1,7 +1,7 @@
 from unittest import TestCase
 
 from aimotorcycle.ai_motorcycle_advertisement_analyzer import AIMotorcycleAdvertisementAnalyzer
-from aimotorcycle.motorcycle_advertisement_analyzer import MotorcycleSpecs
+from aimotorcycle.motorcycle_advertisement_analyzer import MotorcycleSpecs, PriceRange, MotorcycleType
 
 
 class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
@@ -15,8 +15,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Yamaha",
             power_cv=106.0,
             displacement_cc=779,
-            price_range="7.500–10.000 €",
-            types=["Naked"],
+            price_range=PriceRange.FROM_7500_TO_10000,
+            types=[MotorcycleType.NAKED],
             year=2015,
         )
         self.assertEqual(expected, actual)
@@ -29,8 +29,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Royal Enfield",
             power_cv=47.0,
             displacement_cc=648,
-            price_range="5.000-7.500 €",
-            types=["Cafe Racer", "Classic"],
+            price_range=PriceRange.FROM_5000_TO_7500,
+            types=[MotorcycleType.CAFE_RACER, MotorcycleType.CLASSIC],
             year=2023,
         )
         self.assertEqual(expected, actual)
@@ -43,8 +43,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="KTM",
             power_cv=74.0,
             displacement_cc=693,
-            price_range="10.000–15.000 €",
-            types=["Enduro"],
+            price_range=PriceRange.FROM_10000_TO_15000,
+            types=[MotorcycleType.ENDURO],
             year=2022,
         )
         self.assertEqual(expected, actual)
@@ -57,8 +57,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Moto Guzzi",
             power_cv=96.0,
             displacement_cc=1380,
-            price_range="15.000–20.000 €",
-            types=["Cruiser", "Touring"],
+            price_range=PriceRange.FROM_15000_TO_20000,
+            types=[MotorcycleType.CRUISER, MotorcycleType.TOURING],
             year=2016,
         )
         self.assertEqual(expected, actual)
@@ -71,8 +71,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Suzuki",
             power_cv=72.0,
             displacement_cc=645,
-            price_range="N/A",
-            types=["Naked"],
+            price_range=PriceRange.NOT_AVAILABLE,
+            types=[MotorcycleType.NAKED],
             year=2015,
         )
         self.assertEqual(expected, actual)
@@ -85,8 +85,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Harley-Davidson",
             power_cv=90.0,
             displacement_cc=975,
-            price_range="10.000–15.000 €",
-            types=["Cruiser"],
+            price_range=PriceRange.FROM_10000_TO_15000,
+            types=[MotorcycleType.CRUISER],
             year=2023,
         )
         self.assertEqual(expected, actual)
@@ -99,8 +99,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Honda",
             power_cv=145.0,
             displacement_cc=998,
-            price_range="10.000–15.000 €",
-            types=["Naked"],
+            price_range=PriceRange.FROM_10000_TO_15000,
+            types=[MotorcycleType.NAKED],
             year=2023,
         )
         self.assertEqual(expected, actual)
@@ -113,8 +113,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="MV Agusta",
             power_cv=110.0,
             displacement_cc=798,
-            price_range="10.000–15.000 €",
-            types=["Naked"],
+            price_range=PriceRange.FROM_10000_TO_15000,
+            types=[MotorcycleType.NAKED],
             year=2020,
         )
         self.assertEqual(expected, actual)
@@ -127,8 +127,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Ducati",
             power_cv=208.0,
             displacement_cc=1103,
-            price_range="20.000–30.000 €",
-            types=["Naked"],
+            price_range=PriceRange.FROM_20000_TO_30000,
+            types=[MotorcycleType.NAKED],
             year=2021,
         )
         self.assertEqual(expected, actual)
@@ -141,8 +141,8 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             brand="Ducati",
             power_cv=109.0,
             displacement_cc=821,
-            price_range="10.000–15.000 €",
-            types=["Naked"],
+            price_range=PriceRange.FROM_10000_TO_15000,
+            types=[MotorcycleType.NAKED],
             year=2018,
         )
         self.assertEqual(expected, actual)
