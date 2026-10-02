@@ -6,11 +6,15 @@ from aifoodfacts.foodfacts_interpreter import FoodFactsInterpreter
 from aifoodfacts.openfoodfacts_client import OpenFoodFactsClient, HttpOpenFoodFactsClient
 from aiticketsupport.ai_support_ticket_analyzer import AISupportTicketAnalyzer
 from aiticketsupport.support_ticket_analyzer import SupportTicket
+from fine_tuning import fine_tuning
 from socialpostcreator.social_post_creator import AISocialPostCreator
 from specfinder.ai_spec_finder import AISpecFinder
 
-
 def main() -> None:
+    demo()
+    #fine_tuning()
+
+def demo() -> None:
     print("============= LLM as Hexagonal Architecture Port =============\n")
 
     print("Finding ingredients from openfoodfacts...")
@@ -49,7 +53,6 @@ def main() -> None:
     print(social_post_content)
 
     print("\n================= Done ==================")
-
 
 if __name__ == "__main__":
     main()

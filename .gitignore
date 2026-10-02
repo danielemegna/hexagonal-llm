@@ -16,3 +16,6 @@ poetry.lock
 # OS
 .DS_Store
 Thumbs.db
+
+# Fine-tuned models
+trained/

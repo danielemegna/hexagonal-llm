@@ -6,6 +6,7 @@ authors = [{name = "danielemegna"}]
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
+    "mlx-lm>=0.32.0",
     "openai>=1.0.0",
     "pyyaml>=6.0",
 ]
@@ -24,7 +25,7 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["aifoodfacts*", "specfinder*", "socialpostcreator*", "aiticketsupport*", "common*"]
+include = ["aifoodfacts*", "specfinder*", "socialpostcreator*", "aiticketsupport*", "aimotorcycle*", "common*"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
