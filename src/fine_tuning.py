@@ -4,26 +4,34 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+from typing import Callable
 
 import yaml
 
 from aimotorcycle.prompts.grab_motorcycle_specs import GrabMotorcycleSpecs
+from common.prompt import Prompt
 
 
 def fine_tuning() -> None:
-    base_model = Path.home() / ".omlx/models/mlx-community/Qwen2.5-3B-Instruct-4bit"
-    trained_model = Path("trained/Qwen2.5-3B-Instruct-4bit-motorcycle")
+    base_model_name = "mlx-community/Qwen2.5-3B-Instruct-4bit"
+    trained_model_name = "Qwen2.5-3B-Instruct-4bit-motorcycle"
     training_file = Path("material/motorcyles/train.jsonl")
-    work_dir = Path("trained/lora-work") / trained_model.name
+    prompt_to_use: Callable[[str], Prompt] = GrabMotorcycleSpecs
+    max_lines: int | None = 1000  # e.g. 1000 to train on the first lines of train.jsonl only, None for all of them
+
+    trained_model_path = Path("trained") / trained_model_name
+    work_dir = Path("/tmp/lora-work") / trained_model_name
     data_dir = work_dir / "data"
     adapter_dir = work_dir / "adapters"
-    max_lines: int | None = 1000  # e.g. 1000 to train on the first lines of train.jsonl only, None for all of them
-    started_at = time.monotonic()
+
+    omlx_models_dir = Path.home() / ".omlx/models/"
+    base_model_path = omlx_models_dir / base_model_name
 
     print("============= LoRA fine-tuning =============\n")
-    print(f"Base model: {base_model}")
-    print(f"Trained model: {trained_model}")
+    print(f"Base model: {base_model_path}")
+    print(f"Trained model: {trained_model_path}")
     print(f"Work dir (data, adapters, config): {work_dir}")
+    started_at = time.monotonic()
 
     print(f"\n[1/3] Preparing training data from {training_file}...")
     lines = training_file.read_text().splitlines()
@@ -31,7 +39,7 @@ def fine_tuning() -> None:
         print(f"Using only the first {max_lines} of {len(lines)} lines (max_lines)")
         lines = lines[:max_lines]
     print(f"Injecting the prompt into {len(lines)} examples...")
-    examples = [with_prompt(json.loads(line)) for line in lines]
+    examples = [with_prompt(json.loads(line), prompt_to_use) for line in lines]
     random.Random(0).shuffle(examples)
     valid_size = len(examples) // 10
     write_jsonl(data_dir / "valid.jsonl", examples[:valid_size])
@@ -43,7 +51,7 @@ def fine_tuning() -> None:
     iters = (len(examples) - valid_size) // batch_size  # one epoch
     lora_config = work_dir / "lora_config.yaml"
     lora_config.write_text(yaml.safe_dump({
-        "model": str(base_model),
+        "model": str(base_model_path),
         "train": True,
         "data": str(data_dir),
         "adapter_path": str(adapter_dir),
@@ -61,6 +69,7 @@ def fine_tuning() -> None:
         "save_every": 200,
         "seed": 0,
     }, sort_keys=False))
+
     print(f"\n[2/3] LoRA fine-tuning: {iters} iterations of {batch_size} examples (one epoch)...")
     print(f"Config written in {lora_config}")
     print("mlx_lm reports the train loss every 50 iterations and the val loss every 200")
@@ -70,8 +79,8 @@ def fine_tuning() -> None:
 
     print("\n[3/3] Fusing adapters into the base model...")
     step_started_at = time.monotonic()
-    run_mlx_lm("fuse", "--model", str(base_model), "--adapter-path", str(adapter_dir), "--save-path", str(trained_model))
-    print(f"Fused model saved in {trained_model}, done in {elapsed_since(step_started_at)}")
+    run_mlx_lm("fuse", "--model", str(base_model_path), "--adapter-path", str(adapter_dir), "--save-path", str(trained_model_path))
+    print(f"Fused model saved in {trained_model_path}, done in {elapsed_since(step_started_at)}")
 
     print(f"\n================= Fine-tuning done in {elapsed_since(started_at)} ==================")
 
@@ -80,11 +89,11 @@ def elapsed_since(started_at: float) -> str:
     minutes, seconds = divmod(int(time.monotonic() - started_at), 60)
     return f"{minutes}m {seconds}s"
 
-def with_prompt(row: dict) -> dict:
+def with_prompt(row: dict, prompt_for: Callable[[str], Prompt]) -> dict:
     # training file user messages hold the bare input: wrap it in the prompt used at inference time
     user, assistant = row["messages"]
     return {"messages": [
-        {"role": "user", "content": str(GrabMotorcycleSpecs(user["content"]))},
+        {"role": "user", "content": str(prompt_for(user["content"]))},
         assistant,
     ]}
 
