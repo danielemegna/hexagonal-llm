@@ -21,8 +21,6 @@ def fine_tuning() -> None:
 
     trained_model_path = Path("trained") / trained_model_name
     work_dir = Path("/tmp/lora-work") / trained_model_name
-    data_dir = work_dir / "data"
-    adapter_dir = work_dir / "adapters"
 
     omlx_models_dir = Path.home() / ".omlx/models/"
     base_model_path = omlx_models_dir / base_model_name
@@ -34,6 +32,31 @@ def fine_tuning() -> None:
     started_at = time.monotonic()
 
     print(f"\n[1/3] Preparing training data from {training_file}...")
+    lora_config_path = prepare_training_data(base_model_path, prompt_to_use, training_file, max_lines, work_dir)
+    print(f"Done in {elapsed_since(started_at)}")
+
+    print(f"\n[2/3] LoRA fine-tuning using config written in {lora_config_path} ...")
+    print("mlx_lm reports the train loss every 50 iterations and the val loss every 200")
+    step_started_at = time.monotonic()
+    run_mlx_lm("lora", "--config", str(lora_config_path))
+    print(f"Adapters saved in {work_dir}, done in {elapsed_since(step_started_at)}")
+
+    print("\n[3/3] Fusing adapters into the base model...")
+    step_started_at = time.monotonic()
+    adapter_dir = work_dir / "adapters"
+    run_mlx_lm("fuse", "--model", str(base_model_path), "--adapter-path", str(adapter_dir), "--save-path", str(trained_model_path))
+    print(f"Fused model saved in {trained_model_path}, done in {elapsed_since(step_started_at)}")
+
+    print(f"\n================= Fine-tuning done in {elapsed_since(started_at)} ==================")
+
+
+def prepare_training_data(
+    base_model_path: Path,
+    prompt_to_use: Callable[[str], Prompt],
+    training_file: Path,
+    max_lines: int | None,
+    work_dir: Path
+) -> Path:
     lines = training_file.read_text().splitlines()
     if max_lines is not None:
         print(f"Using only the first {max_lines} of {len(lines)} lines (max_lines)")
@@ -42,10 +65,11 @@ def fine_tuning() -> None:
     examples = [with_prompt(json.loads(line), prompt_to_use) for line in lines]
     random.Random(0).shuffle(examples)
     valid_size = len(examples) // 10
+    data_dir = work_dir / "data"
+    adapter_dir = work_dir / "adapters"
     write_jsonl(data_dir / "valid.jsonl", examples[:valid_size])
     write_jsonl(data_dir / "train.jsonl", examples[valid_size:])
     print(f"Written {len(examples) - valid_size} train examples and {valid_size} valid examples in {data_dir}")
-    print(f"Done in {elapsed_since(started_at)}")
 
     batch_size = 4
     iters = (len(examples) - valid_size) // batch_size  # one epoch
@@ -69,20 +93,8 @@ def fine_tuning() -> None:
         "save_every": 200,
         "seed": 0,
     }, sort_keys=False))
-
-    print(f"\n[2/3] LoRA fine-tuning: {iters} iterations of {batch_size} examples (one epoch)...")
-    print(f"Config written in {lora_config}")
-    print("mlx_lm reports the train loss every 50 iterations and the val loss every 200")
-    step_started_at = time.monotonic()
-    run_mlx_lm("lora", "--config", str(lora_config))
-    print(f"Adapters saved in {adapter_dir}, done in {elapsed_since(step_started_at)}")
-
-    print("\n[3/3] Fusing adapters into the base model...")
-    step_started_at = time.monotonic()
-    run_mlx_lm("fuse", "--model", str(base_model_path), "--adapter-path", str(adapter_dir), "--save-path", str(trained_model_path))
-    print(f"Fused model saved in {trained_model_path}, done in {elapsed_since(step_started_at)}")
-
-    print(f"\n================= Fine-tuning done in {elapsed_since(started_at)} ==================")
+    print(f"\nConfig written in {lora_config}: {iters} iterations of {batch_size} examples (one epoch)...")
+    return lora_config
 
 
 def elapsed_since(started_at: float) -> str:
