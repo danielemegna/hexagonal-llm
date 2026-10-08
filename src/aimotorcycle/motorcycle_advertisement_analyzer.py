@@ -37,7 +37,7 @@ class MotorcycleSpecs:
   power_cv: float
   displacement_cc: int
   price_range: PriceRange
-  types: list[MotorcycleType]
+  types: set[MotorcycleType]
   year: int
 
 

@@ -24,6 +24,6 @@ class AIMotorcycleAdvertisementAnalyzer(MotorcycleAdvertisementAnalyzer):
             power_cv=data['power_cv'],
             displacement_cc=data['displacement_cc'],
             price_range=PriceRange(data['price_range']),
-            types=[MotorcycleType(t) for t in data['types']],
+            types=set([MotorcycleType(t) for t in data['types']]),
             year=data['year'],
         )

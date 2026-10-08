@@ -16,7 +16,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=106.0,
             displacement_cc=779,
             price_range=PriceRange.FROM_7500_TO_10000,
-            types=[MotorcycleType.NAKED],
+            types={MotorcycleType.NAKED},
             year=2015,
         )
         self.assertEqual(expected, actual)
@@ -30,7 +30,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=47.0,
             displacement_cc=648,
             price_range=PriceRange.FROM_5000_TO_7500,
-            types=[MotorcycleType.CAFE_RACER, MotorcycleType.CLASSIC],
+            types={MotorcycleType.CAFE_RACER, MotorcycleType.CLASSIC},
             year=2023,
         )
         self.assertEqual(expected, actual)
@@ -44,7 +44,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=74.0,
             displacement_cc=693,
             price_range=PriceRange.FROM_10000_TO_15000,
-            types=[MotorcycleType.ENDURO],
+            types={MotorcycleType.ENDURO},
             year=2022,
         )
         self.assertEqual(expected, actual)
@@ -58,7 +58,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=96.0,
             displacement_cc=1380,
             price_range=PriceRange.FROM_15000_TO_20000,
-            types=[MotorcycleType.CRUISER, MotorcycleType.TOURING],
+            types={MotorcycleType.CRUISER, MotorcycleType.TOURING},
             year=2016,
         )
         self.assertEqual(expected, actual)
@@ -72,7 +72,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=72.0,
             displacement_cc=645,
             price_range=PriceRange.NOT_AVAILABLE,
-            types=[MotorcycleType.NAKED],
+            types={MotorcycleType.NAKED},
             year=2015,
         )
         self.assertEqual(expected, actual)
@@ -86,7 +86,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=90.0,
             displacement_cc=975,
             price_range=PriceRange.FROM_10000_TO_15000,
-            types=[MotorcycleType.CRUISER],
+            types={MotorcycleType.CRUISER},
             year=2023,
         )
         self.assertEqual(expected, actual)
@@ -100,7 +100,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=145.0,
             displacement_cc=998,
             price_range=PriceRange.FROM_10000_TO_15000,
-            types=[MotorcycleType.NAKED],
+            types={MotorcycleType.NAKED},
             year=2023,
         )
         self.assertEqual(expected, actual)
@@ -114,7 +114,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=110.0,
             displacement_cc=798,
             price_range=PriceRange.FROM_10000_TO_15000,
-            types=[MotorcycleType.NAKED],
+            types={MotorcycleType.NAKED},
             year=2020,
         )
         self.assertEqual(expected, actual)
@@ -128,7 +128,7 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=208.0,
             displacement_cc=1103,
             price_range=PriceRange.FROM_20000_TO_30000,
-            types=[MotorcycleType.NAKED],
+            types={MotorcycleType.NAKED},
             year=2021,
         )
         self.assertEqual(expected, actual)
