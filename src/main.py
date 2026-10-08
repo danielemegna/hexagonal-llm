@@ -7,13 +7,11 @@ from aifoodfacts.openfoodfacts_client import OpenFoodFactsClient, HttpOpenFoodFa
 from aimotorcycle.ai_motorcycle_advertisement_analyzer import AIMotorcycleAdvertisementAnalyzer
 from aiticketsupport.ai_support_ticket_analyzer import AISupportTicketAnalyzer
 from aiticketsupport.support_ticket_analyzer import SupportTicket
-from fine_tuning import fine_tuning
 from socialpostcreator.social_post_creator import AISocialPostCreator
 from specfinder.ai_spec_finder import AISpecFinder
 
 def main() -> None:
     demo()
-    #fine_tuning()
 
 def demo() -> None:
     print("============= LLM as Hexagonal Architecture Port =============\n")

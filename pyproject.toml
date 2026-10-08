@@ -18,6 +18,7 @@ dev = [
 
 [project.scripts]
 main = "main:main"
+finetuning = "fine_tuning:fine_tuning"
 
 [build-system]
 requires = ["setuptools>=61.0"]
