@@ -5,7 +5,7 @@ from aimotorcycle.motorcycle_advertisement_analyzer import MotorcycleSpecs, Pric
 
 
 class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
-    analyzer = AIMotorcycleAdvertisementAnalyzer("Qwen3.8-27B-4bit")
+    analyzer = AIMotorcycleAdvertisementAnalyzer("Qwen3.6-35B-A3B-4bit")
 
     def test_advertisement_1_yamaha_fz8_naked(self):
         actual = self.analyzer.analyze(
@@ -142,7 +142,21 @@ class TestAIMotorcycleAdvertisementAnalyzer(TestCase):
             power_cv=109.0,
             displacement_cc=821,
             price_range=PriceRange.FROM_10000_TO_15000,
-            types=[MotorcycleType.NAKED],
+            types={MotorcycleType.NAKED},
             year=2018,
+        )
+        self.assertEqual(expected, actual)
+
+    def test_advertisement_11_ducati_multistrada(self):
+        actual = self.analyzer.analyze(
+            "C'è un momento, in ogni viaggio, in cui l'asfalto finisce e la strada diventa sterrato. La maggior parte delle moto ti costringe a scegliere se fermarti o tornare indietro, mentre la Ducati Multistrada V4 S del 2025 ti invita a proseguire. Borgo Panigale l'ha progettata per chi non vuole rinunciare a nulla: è un'adventure capace di affrontare le piste bianche del Marocco e, il giorno dopo, di macinare ottocento chilometri di autostrada con il comfort di una vera sport-touring. Il cuore è il V4 Granturismo da 1.158 cc, un motore che eroga 170 CV a 10.750 giri e che sa essere docile come un bicilindrico quando lo chiedi. A bassa velocità la disattivazione della bancata posteriore riduce calore e consumi, così il traffico cittadino smette di essere un tormento. Quando apri il gas sulla statale, la spinta arriva piena e continua, senza vuoti. Le sospensioni semiattive Skyhook leggono il fondo stradale e si adattano in tempo reale, mentre il radar anteriore e posteriore gestisce il cruise control adattivo e ti avvisa dei veicoli nell'angolo cieco. Il serbatoio da 22 litri garantisce un'autonomia generosa, la sella regolabile accoglie pilota e passeggero senza compromessi e il cupolino si alza con una mano mentre guidi. Il prezzo della versione S si colloca tra i 24.000 e i 30.000 euro, a seconda degli allestimenti scelti. È una cifra importante, che però compra una moto con cui si va ovunque, da soli o in due, per un weekend o per un mese. La Multistrada non chiede quale strada vuoi fare: ti chiede soltanto quanto lontano vuoi andare."
+        )
+        expected = MotorcycleSpecs(
+            brand="Ducati",
+            power_cv=170,
+            displacement_cc=1158,
+            price_range=PriceRange.FROM_20000_TO_30000,
+            types={MotorcycleType.SPORT_TOURING, MotorcycleType.ADVENTURE},
+            year=2025,
         )
         self.assertEqual(expected, actual)
